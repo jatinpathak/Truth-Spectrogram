@@ -1,0 +1,102 @@
+{
+  "identity": {
+    "name": "Truth Spectrogram",
+    "mission": "Reveal the synthetic nature of AI voices through clinical precision and data visualization.",
+    "tone": "Authoritative, Clinical, Secure, High-Tech",
+    "aesthetics": "Cybersecurity Dashboard meets Swiss Design. Dark mode default, high contrast, neon data accents."
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Chivo, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-black tracking-tight",
+      "h2": "text-2xl md:text-3xl font-bold tracking-tight",
+      "h3": "text-xl font-bold tracking-normal",
+      "p": "text-base leading-relaxed text-muted-foreground",
+      "mono": "text-sm font-mono tracking-wide"
+    }
+  },
+  "colors": {
+    "background": {
+      "default": "#09090b",
+      "card": "#0c0c0e",
+      "subtle": "#18181b"
+    },
+    "text": {
+      "primary": "#fafafa",
+      "secondary": "#a1a1aa",
+      "muted": "#52525b"
+    },
+    "accents": {
+      "human_safe": "#06b6d4",
+      "ai_threat": "#f97316",
+      "neutral": "#64748b"
+    },
+    "border": {
+      "default": "rgba(255,255,255,0.1)",
+      "active": "rgba(255,255,255,0.2)"
+    }
+  },
+  "grids": {
+    "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-12",
+    "bento_results": "grid grid-cols-1 md:grid-cols-4 gap-4"
+  },
+  "components": {
+    "cards": {
+      "style": "bg-card border border-white/5 rounded-none md:rounded-lg shadow-2xl",
+      "hover": "hover:border-white/10 transition-colors duration-300"
+    },
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 font-bold rounded-sm px-8 py-3 transition-transform active:scale-95",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/5 font-medium rounded-sm px-6 py-3",
+      "destructive": "bg-red-900/20 text-red-500 border border-red-900/50 hover:bg-red-900/40"
+    },
+    "inputs": {
+      "style": "bg-black/50 border-white/10 focus:border-white/30 text-white placeholder:text-white/20 rounded-sm"
+    }
+  },
+  "visual_enhancers": {
+    "scanlines": "background: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255, 255, 255, 0.03) 2px); pointer-events: none; position: absolute; inset: 0; z-index: 10;",
+    "glass_panel": "backdrop-blur-xl bg-black/60 border border-white/10 shadow-xl",
+    "glow_human": "shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)]",
+    "glow_ai": "shadow-[0_0_30px_-5px_rgba(249,115,22,0.3)]"
+  },
+  "image_urls": {
+    "hero_texture": "https://images.unsplash.com/photo-1764263703876-727b48efed07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwc291bmQlMjB3YXZlJTIwYWJzdHJhY3QlMjBibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcwMjI1MzI5fDA&ixlib=rb-4.1.0&q=85",
+    "placeholder_waveform": "https://images.unsplash.com/photo-1764263703876-727b48efed07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwc291bmQlMjB3YXZlJTIwYWJzdHJhY3QlMjBibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcwMjI1MzI5fDA&ixlib=rb-4.1.0&q=85"
+  },
+  "motion": {
+    "instructions": "Use Framer Motion for all entry animations. The waveform should 'breathe' (scaleY) when analyzing. Results should 'count up' (0% to 99%).",
+    "transitions": "transition-all duration-300 ease-out"
+  },
+  "instructions_to_main_agent": [
+    "INSTALL FONTS: Add Chivo, Manrope, and JetBrains Mono via Google Fonts in index.html or index.css.",
+    "DARK MODE ONLY: Force dark mode by adding 'dark' class to html/body or setting default theme to dark.",
+    "NO ROUNDED CORNERS: Minimize border-radius. Use rounded-sm or rounded-md max. Security tools are sharp.",
+    "WAVEFORM: Create a visual 'fake' waveform using CSS bars (multiple divs with different heights animating) if real data isn't available, or use the Recharts BarChart with random data to simulate audio analysis.",
+    "CONFIDENCE METER: Use a large, monospaced percentage display that counts up.",
+    "API KEY INPUT: Make it look like a password field with a 'Show' toggle, styled like a terminal input.",
+    "RESULT CARDS: Use color coding heavily. If Human: Cyan/Teal borders and glow. If AI: Orange/Red borders and glow."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ]
+}
